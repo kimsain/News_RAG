@@ -20,7 +20,6 @@ vector_db_project/
 
 - **데이터베이스**: PostgreSQL + PGVector 확장
 - **임베딩 생성**: OpenAI API (text-embedding-ada-002)
-- **검색 엔진**: FAISS (벡터 유사도 검색)
 - **API 서버**: FastAPI
 - **RAG 구현**: LangChain + GPT-4
 - **개발 언어**: Python 3.10+
