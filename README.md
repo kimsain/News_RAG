@@ -63,44 +63,6 @@ News_RAG/
 | **임베딩** | `langchain_embedding_utils.py` | `embedding_utils.py` | OpenAIEmbeddings vs openai.Embedding.create() |
 | **텍스트 분할** | `langchain_text_splitter.py` | ❌ (없음) | RecursiveCharacterTextSplitter vs 단순 결합 |
 
-## 설치 및 실행
-
-### 1. 환경 설정
-```bash
-# 필요한 패키지 설치
-pip install -r requirements.txt
-
-# PostgreSQL에서 pgvector 확장 설치
-psql -d your_database -c "CREATE EXTENSION vector;"
-```
-
-### 2. 설정 파일 수정
-`config.py`에서 다음 설정을 확인하세요:
-```python
-# OpenAI API 키
-OPENAI_API_KEY = "your-openai-api-key"
-
-# PostgreSQL 연결 정보
-DB_HOST = "localhost"
-DB_PORT = "5432"
-DB_NAME = "vectordb"
-DB_USER = "postgres"
-DB_PASSWORD = "password"
-```
-
-### 3. 서버 실행
-```bash
-# 실행 스크립트 사용
-./run_langchain_server.sh
-
-# 또는 직접 실행
-uvicorn langchain_app:app --host 0.0.0.0 --port 8000 --reload
-```
-
-서버가 실행되면 다음 주소에서 확인할 수 있습니다:
-- API 서버: http://localhost:8000
-- API 문서: http://localhost:8000/docs
-
 ## API 사용법
 
 ### 1. 문서 추가
