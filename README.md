@@ -46,9 +46,7 @@ News_RAG/
 ├── vector_db_manager.py                # psycopg2 직접 사용한 벡터 DB 관리
 ├── embedding_utils.py                  # openai 라이브러리 직접 호출
 ├── bigkinds_api.py                     # 뉴스 API (공통)
-├── sample_data.py                      # 샘플 데이터 생성
 ├── example_client.py                   # 클라이언트 예시
-├── setup_db.sh                         # 데이터베이스 설정 스크립트
 ├── run_server.sh                       # 서버 실행 스크립트
 ├── run_test.sh                         # 테스트 스크립트
 ├── requirements.txt                    # 패키지 목록
